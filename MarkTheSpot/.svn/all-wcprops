@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/repository/!svn/ver/266/trunk/MarkTheSpot
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/repository/!svn/ver/261/trunk/MarkTheSpot/main.m
+END
+MarkTheSpotViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/repository/!svn/ver/266/trunk/MarkTheSpot/MarkTheSpotViewController.xib
+END
+DirectionsViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/repository/!svn/ver/266/trunk/MarkTheSpot/DirectionsViewController.xib
+END
+Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/repository/!svn/ver/261/trunk/MarkTheSpot/Info.plist
+END
+ConfigViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/repository/!svn/ver/266/trunk/MarkTheSpot/ConfigViewController.xib
+END
+directions.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/repository/!svn/ver/261/trunk/MarkTheSpot/directions.png
+END
+MarkTheSpot_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repository/!svn/ver/261/trunk/MarkTheSpot/MarkTheSpot_Prefix.pch
+END
+config.png
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/repository/!svn/ver/266/trunk/MarkTheSpot/config.png
+END
+mark_small_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repository/!svn/ver/261/trunk/MarkTheSpot/mark_small_pressed.png
+END
+MainWindow.xib
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/repository/!svn/ver/261/trunk/MarkTheSpot/MainWindow.xib
+END
+mark_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/repository/!svn/ver/261/trunk/MarkTheSpot/mark_pressed.png
+END
+mark_small.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/repository/!svn/ver/261/trunk/MarkTheSpot/mark_small.png
+END
+Default.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/repository/!svn/ver/261/trunk/MarkTheSpot/Default.png
+END
+directions_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/repository/!svn/ver/261/trunk/MarkTheSpot/directions_pressed.png
+END
+icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/repository/!svn/ver/261/trunk/MarkTheSpot/icon.png
+END
+mark.png
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/repository/!svn/ver/261/trunk/MarkTheSpot/mark.png
+END
+config_pressed.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/repository/!svn/ver/266/trunk/MarkTheSpot/config_pressed.png
+END
