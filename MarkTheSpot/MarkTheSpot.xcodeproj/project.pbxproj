@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* MarkTheSpotAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MarkTheSpotAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* MarkTheSpotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* MarkTheSpotViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* MarkTheSpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MarkTheSpotViewController.m */; };
+		FC0612A20EB658FA00158D86 /* DirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0612A10EB658FA00158D86 /* DirectionsViewController.m */; };
+		FC0612A40EB6598600158D86 /* DirectionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0612A30EB6598600158D86 /* DirectionsViewController.xib */; };
+		FC0614760EB7D11900158D86 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0614750EB7D11900158D86 /* CoreLocation.framework */; };
+		FC8986D90EBBDEA400786C11 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8986D40EBBDEA400786C11 /* icon.png */; };
+		FC8986DA0EBBDEA400786C11 /* mark.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8986D50EBBDEA400786C11 /* mark.png */; };
+		FC8986DB0EBBDEA400786C11 /* mark_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8986D60EBBDEA400786C11 /* mark_pressed.png */; };
+		FC8986DC0EBBDEA400786C11 /* directions.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8986D70EBBDEA400786C11 /* directions.png */; };
+		FC8986DD0EBBDEA400786C11 /* directions_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8986D80EBBDEA400786C11 /* directions_pressed.png */; };
+		FC8988B60EBE412D00786C11 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8988B50EBE412D00786C11 /* Default.png */; };
+		FCD5714112DBD34300FD9236 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD5713F12DBD34300FD9236 /* ConfigViewController.m */; };
+		FCD5715612DBD40900FD9236 /* ConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCD5715312DBD40900FD9236 /* ConfigViewController.xib */; };
+		FCD5715712DBD40900FD9236 /* config.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD5715412DBD40900FD9236 /* config.png */; };
+		FCD5715812DBD40900FD9236 /* config_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD5715512DBD40900FD9236 /* config_pressed.png */; };
+		FCDEDC910EBF978300AE52E0 /* mark_small.png in Resources */ = {isa = PBXBuildFile; fileRef = FCDEDC900EBF978300AE52E0 /* mark_small.png */; };
+		FCDEDC930EBF98DA00AE52E0 /* mark_small_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCDEDC920EBF98DA00AE52E0 /* mark_small_pressed.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* MarkTheSpotAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkTheSpotAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* MarkTheSpotAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkTheSpotAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* MarkTheSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkTheSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* MarkTheSpotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkTheSpotViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* MarkTheSpotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkTheSpotViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* MarkTheSpotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkTheSpotViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* MarkTheSpot_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkTheSpot_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC0612A00EB658FA00158D86 /* DirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionsViewController.h; sourceTree = "<group>"; };
+		FC0612A10EB658FA00158D86 /* DirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionsViewController.m; sourceTree = "<group>"; };
+		FC0612A30EB6598600158D86 /* DirectionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectionsViewController.xib; sourceTree = "<group>"; };
+		FC0614750EB7D11900158D86 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FC8986D40EBBDEA400786C11 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FC8986D50EBBDEA400786C11 /* mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark.png; sourceTree = "<group>"; };
+		FC8986D60EBBDEA400786C11 /* mark_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_pressed.png; sourceTree = "<group>"; };
+		FC8986D70EBBDEA400786C11 /* directions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directions.png; sourceTree = "<group>"; };
+		FC8986D80EBBDEA400786C11 /* directions_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directions_pressed.png; sourceTree = "<group>"; };
+		FC8988B50EBE412D00786C11 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FCD5713F12DBD34300FD9236 /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		FCD5714012DBD34300FD9236 /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		FCD5715312DBD40900FD9236 /* ConfigViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigViewController.xib; sourceTree = "<group>"; };
+		FCD5715412DBD40900FD9236 /* config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config.png; sourceTree = "<group>"; };
+		FCD5715512DBD40900FD9236 /* config_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config_pressed.png; sourceTree = "<group>"; };
+		FCDEDC900EBF978300AE52E0 /* mark_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_small.png; sourceTree = "<group>"; };
+		FCDEDC920EBF98DA00AE52E0 /* mark_small_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_small_pressed.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				FC0614760EB7D11900158D86 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FCD5714012DBD34300FD9236 /* ConfigViewController.h */,
+				FCD5713F12DBD34300FD9236 /* ConfigViewController.m */,
+				1D3623240D0F684500981E51 /* MarkTheSpotAppDelegate.h */,
+				1D3623250D0F684500981E51 /* MarkTheSpotAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* MarkTheSpotViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* MarkTheSpotViewController.m */,
+				FC0612A00EB658FA00158D86 /* DirectionsViewController.h */,
+				FC0612A10EB658FA00158D86 /* DirectionsViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* MarkTheSpot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MarkTheSpot_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCD5715312DBD40900FD9236 /* ConfigViewController.xib */,
+				FCD5715412DBD40900FD9236 /* config.png */,
+				FCD5715512DBD40900FD9236 /* config_pressed.png */,
+				FCDEDC920EBF98DA00AE52E0 /* mark_small_pressed.png */,
+				FCDEDC900EBF978300AE52E0 /* mark_small.png */,
+				FC8986D40EBBDEA400786C11 /* icon.png */,
+				FC8986D50EBBDEA400786C11 /* mark.png */,
+				FC8986D60EBBDEA400786C11 /* mark_pressed.png */,
+				FC8986D70EBBDEA400786C11 /* directions.png */,
+				FC8986D80EBBDEA400786C11 /* directions_pressed.png */,
+				2899E5210DE3E06400AC0155 /* MarkTheSpotViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				FC0612A30EB6598600158D86 /* DirectionsViewController.xib */,
+				FC8988B50EBE412D00786C11 /* Default.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC0614750EB7D11900158D86 /* CoreLocation.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MarkTheSpot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MarkTheSpot" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarkTheSpot;
+			productName = MarkTheSpot;
+			productReference = 1D6058910D05DD3D006BFB54 /* MarkTheSpot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MarkTheSpot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MarkTheSpot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* MarkTheSpotViewController.xib in Resources */,
+				FC0612A40EB6598600158D86 /* DirectionsViewController.xib in Resources */,
+				FC8986D90EBBDEA400786C11 /* icon.png in Resources */,
+				FC8986DA0EBBDEA400786C11 /* mark.png in Resources */,
+				FC8986DB0EBBDEA400786C11 /* mark_pressed.png in Resources */,
+				FC8986DC0EBBDEA400786C11 /* directions.png in Resources */,
+				FC8986DD0EBBDEA400786C11 /* directions_pressed.png in Resources */,
+				FC8988B60EBE412D00786C11 /* Default.png in Resources */,
+				FCDEDC910EBF978300AE52E0 /* mark_small.png in Resources */,
+				FCDEDC930EBF98DA00AE52E0 /* mark_small_pressed.png in Resources */,
+				FCD5715612DBD40900FD9236 /* ConfigViewController.xib in Resources */,
+				FCD5715712DBD40900FD9236 /* config.png in Resources */,
+				FCD5715812DBD40900FD9236 /* config_pressed.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* MarkTheSpotAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* MarkTheSpotViewController.m in Sources */,
+				FC0612A20EB658FA00158D86 /* DirectionsViewController.m in Sources */,
+				FCD5714112DBD34300FD9236 /* ConfigViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MarkTheSpot_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = MarkTheSpot;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MarkTheSpot_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = MarkTheSpot;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4F0847F0-2F9B-44A9-872A-D6F6918D87AB";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		FCFAF9400EBBC2D700252F74 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jon Pedersen";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AD35EB4D-EB38-4F75-9785-DDFBA3A2363A";
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		FCFAF9410EBBC2D700252F74 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MarkTheSpot_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = MarkTheSpot;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MarkTheSpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				FCFAF9410EBBC2D700252F74 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MarkTheSpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				FCFAF9400EBBC2D700252F74 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
