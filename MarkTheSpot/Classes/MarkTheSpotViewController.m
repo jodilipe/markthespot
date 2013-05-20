@@ -51,7 +51,7 @@
 		accuracy.text = NSLocalizedString (@"Acceptable accuracy", nil);
         [button setEnabled:YES];
 	} else {
-		accuracy.text = NSLocalizedString (@"Uacceptable accuracy", nil);
+		accuracy.text = NSLocalizedString (@"Unacceptable accuracy", nil);
         [button setEnabled:NO];
     }
 }

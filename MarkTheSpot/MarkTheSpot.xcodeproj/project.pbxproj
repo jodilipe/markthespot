@@ -86,6 +86,11 @@
 		FCD5715512DBD40900FD9236 /* config_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config_pressed.png; sourceTree = "<group>"; };
 		FCD62AFF174A766A0040A485 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FCD62B01174A766B0040A485 /* da */ = {isa = PBXFileReference; lastKnownFileType = file; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FCD62B07174A86930040A485 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/ConfigViewController.xib; sourceTree = "<group>"; };
+		FCD62B08174A86930040A485 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MarkTheSpotViewController.xib; sourceTree = "<group>"; };
+		FCD62B09174A86940040A485 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/DirectionsViewController.xib; sourceTree = "<group>"; };
+		FCD62B0A174A86940040A485 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FCD62B0B174A86940040A485 /* de */ = {isa = PBXFileReference; lastKnownFileType = file; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FCDEDC900EBF978300AE52E0 /* mark_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_small.png; sourceTree = "<group>"; };
 		FCDEDC920EBF98DA00AE52E0 /* mark_small_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_small_pressed.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,6 +236,7 @@
 				German,
 				fr,
 				da,
+				de,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -296,6 +302,7 @@
 			children = (
 				FCC9FF52174A637F00D152BF /* en */,
 				FCC9FF54174A639B00D152BF /* da */,
+				FCD62B0A174A86940040A485 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -305,6 +312,7 @@
 			children = (
 				FCC9FF56174A6D8600D152BF /* en */,
 				FCC9FF58174A6D8D00D152BF /* da */,
+				FCD62B09174A86940040A485 /* de */,
 			);
 			name = DirectionsViewController.xib;
 			sourceTree = "<group>";
@@ -314,6 +322,7 @@
 			children = (
 				FCC9FF5A174A6DE800D152BF /* en */,
 				FCC9FF5C174A6DEC00D152BF /* da */,
+				FCD62B08174A86930040A485 /* de */,
 			);
 			name = MarkTheSpotViewController.xib;
 			sourceTree = "<group>";
@@ -323,6 +332,7 @@
 			children = (
 				FCC9FF5E174A6E2300D152BF /* en */,
 				FCC9FF60174A6E2800D152BF /* da */,
+				FCD62B07174A86930040A485 /* de */,
 			);
 			name = ConfigViewController.xib;
 			sourceTree = "<group>";
@@ -332,6 +342,7 @@
 			children = (
 				FCD62AFF174A766A0040A485 /* en */,
 				FCD62B01174A766B0040A485 /* da */,
+				FCD62B0B174A86940040A485 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
