@@ -24,7 +24,7 @@
 }
 
 - (void)buttonPressed:(id)sender {
-	NSLog(@"buttonPressed called");
+//	NSLog(@"buttonPressed called");
 	if (delegate.latitude != 0) {
 		[delegate saveLocation];
 		[delegate setDirectionsViewController];
@@ -58,7 +58,7 @@
 	} else if (newAccuracy > 40 && newAccuracy <= 70) {
 		accuracy.text = @"Acceptable accuracy";
 	} else {
-		accuracy.text = @"Bad accuracy";
+		accuracy.text = @"Unacceptable accuracy";
 	}
 }
 

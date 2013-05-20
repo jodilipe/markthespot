@@ -18,7 +18,7 @@
 @synthesize distanceToMark;
 
 - (void)viewDidLoad {
-	NSLog(@"DirectionsViewController.viewDidLoad");
+//	NSLog(@"DirectionsViewController.viewDidLoad");
 	UIImage *image = [[UIImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"directions" ofType:@"png"]];
 	UIImage *imagePressed = [[UIImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"directions_pressed" ofType:@"png"]];
 	[button setImage:image forState:UIControlStateNormal];
@@ -66,7 +66,7 @@
 }
 
 - (void)configButtonPressed:(id)sender {
-	NSLog(@"configButtonPressed");
+//	NSLog(@"configButtonPressed");
 	[delegate setConfigViewController];
 }
 

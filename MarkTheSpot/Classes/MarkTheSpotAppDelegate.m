@@ -55,7 +55,7 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
-	NSLog(@"got new location: latitude: %f longitude: %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
+//	NSLog(@"got new location: latitude: %f longitude: %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
 	self.latitude = newLocation.coordinate.latitude;
 	self.longitude = newLocation.coordinate.longitude;
 	
@@ -63,7 +63,7 @@
 		NSArray *storedCoords = [NSArray arrayWithContentsOfFile:[self getLocationFilePath]];
 		CLLocation *storedLocation = [[CLLocation alloc] initWithLatitude:[[storedCoords objectAtIndex:0] floatValue] longitude:[[storedCoords objectAtIndex:1] floatValue]];
 		int distanceInMeters = [newLocation distanceFromLocation:storedLocation];
-		NSLog(@"distance: %i", distanceInMeters);
+//		NSLog(@"distance: %i", distanceInMeters);
 		[directionsViewController setDistance:distanceInMeters];
 	} else {
 		int accuracy = [newLocation horizontalAccuracy];
@@ -80,7 +80,7 @@
 }
 
 - (void)saveLocation {
-	NSLog(@"saveLocation called - latitude: %f longitude: %f", self.latitude, self.longitude);
+//	NSLog(@"saveLocation called - latitude: %f longitude: %f", self.latitude, self.longitude);
 	NSArray *arr = [NSArray arrayWithObjects:[NSNumber numberWithDouble:self.latitude], [NSNumber numberWithDouble:self.longitude], nil];
 	[arr writeToFile:[self getLocationFilePath] atomically:TRUE];
 }
@@ -103,16 +103,18 @@
 }
 		 
 - (void)showDirections {
-	NSLog(@"showDirections called");
+//	NSLog(@"showDirections called");
 	if ([self hasStoredLocation]) {
 		NSArray *storedLocation = [NSArray arrayWithContentsOfFile:[self getLocationFilePath]];
-		NSLog(@"storedLocation: latitude: %f, longitude %f",[[storedLocation objectAtIndex:0] floatValue], [[storedLocation objectAtIndex:1] floatValue]);
+//		NSLog(@"storedLocation: latitude: %f, longitude %f",[[storedLocation objectAtIndex:0] floatValue], [[storedLocation objectAtIndex:1] floatValue]);
+		NSString *currentLocation = [NSString stringWithFormat: @"%+.6f,%+.6f", self.latitude, self.longitude];
 		NSString *spot = [NSString stringWithFormat: @"%+.6f,%+.6f", [[storedLocation objectAtIndex:0] floatValue], [[storedLocation objectAtIndex:1] floatValue]];
 //		self.latitude = 0.0;
 //		self.longitude = 0.0;
 //		[self saveLocation];
-		NSString *url = [NSString stringWithFormat: @"http://maps.google.com/maps?q=%@@%@", spot, spot];
-		NSLog(@"calling maps with url: %@", url);
+		NSString *url = [NSString stringWithFormat: @"http://maps.apple.com/?daddr=%@&saddr=%@", currentLocation, spot];
+//		NSString *url = [NSString stringWithFormat: @"http://maps.google.com/maps?q=%@@%@", spot, spot];
+//		NSLog(@"calling maps with url: %@", url);
 		[[UIApplication sharedApplication] openURL: [NSURL URLWithString: url]];
 	}
 }
