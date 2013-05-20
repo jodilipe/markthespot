@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  MarkTheSpot
+
+  Created by Jon Pedersen on 20/05/13.
+
+*/
+"Acceptable accuracy" = "Acceptabel nøjagtighed";
+"Uacceptable accuracy" = "Uacceptabel nøjagtighed";
+"Distance to Mark" = "Afstand til mærke";
+"Error getting location" = "Fejl ved opdatering af position";
+"Please check location settings" = "Check venligst indstilling for lokalitetstjeneste";
+"Store new Mark?" = "Gem nyt mærke?";
+"Current Mark will be erased." = "Nuværende mærke slettes.";
+"Cancel" = "Fortryd";

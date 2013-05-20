@@ -75,8 +75,8 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error getting location" message:@"Please check location settings"
-												   delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString (@"Error getting location", nil) message:NSLocalizedString (@"Please check location settings", nil)
+												   delegate:self cancelButtonTitle:NSLocalizedString (@"OK", nil) otherButtonTitles: nil];
 	[alert show];
 	[alert release];
 }
@@ -194,7 +194,7 @@
 }
 
 - (void)storeConfigurations {
-	NSLog(@"storing config feet: %@, google maps: %@", (useUsUnits ? @"YES" : @"NO"), (useGoogleMaps ? @"YES" : @"NO"));
+//	NSLog(@"storing config feet: %@, google maps: %@", (useUsUnits ? @"YES" : @"NO"), (useGoogleMaps ? @"YES" : @"NO"));
 	NSArray *arr = [NSArray arrayWithObjects:(useUsUnits ? @"YES" : @"NO"), (useGoogleMaps ? @"YES" : @"NO"), nil];
 	[arr writeToFile:[self getConfigFilePath] atomically:TRUE];
 }

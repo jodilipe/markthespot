@@ -48,10 +48,10 @@
 		accuracy.text = @"";
         [button setEnabled:YES];
 	} else if (newAccuracy > 40 && newAccuracy <= 70) {
-		accuracy.text = @"Acceptable accuracy";
+		accuracy.text = NSLocalizedString (@"Acceptable accuracy", nil);
         [button setEnabled:YES];
 	} else {
-		accuracy.text = @"Unacceptable accuracy";
+		accuracy.text = NSLocalizedString (@"Uacceptable accuracy", nil);
         [button setEnabled:NO];
     }
 }

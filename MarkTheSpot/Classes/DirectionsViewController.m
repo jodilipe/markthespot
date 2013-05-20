@@ -44,8 +44,8 @@
 
 - (void)smallButtonPressed:(id)sender {
 	if ([delegate showDirectionsWarning]) {
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Store new Mark?" message:@"Current Mark will be erased."
-													   delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString (@"Store new Mark?", nil) message:NSLocalizedString (@"Current Mark will be erased.", nil)
+													   delegate:self cancelButtonTitle:NSLocalizedString (@"Cancel", nil) otherButtonTitles:NSLocalizedString (@"OK", nil), nil];
 		[alert show];
 		[alert release];
 	} else {
@@ -96,8 +96,9 @@
 				dist = [NSString stringWithFormat:@"%i m", (int)meters];
 			}
 		}
-	}	
-	distanceToMark.text = [NSString stringWithFormat:@"Distance to Mark: %@", dist];
+	}
+    NSString *distLabel = NSLocalizedString (@"Distance to Mark", nil);
+	distanceToMark.text = [NSString stringWithFormat:@"%@: %@", distLabel, dist];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -115,10 +116,10 @@
 		accuracy.text = @"";
         [button setEnabled:YES];
 	} else if (newAccuracy > 25 && newAccuracy <= 50) {
-		accuracy.text = @"Acceptable accuracy";
+		accuracy.text = NSLocalizedString (@"Acceptable accuracy", nil);
         [button setEnabled:YES];
 	} else {
-		accuracy.text = @"Unacceptable accuracy";
+		accuracy.text = NSLocalizedString (@"Uacceptable accuracy", nil);
         [button setEnabled:NO];
     }
 }
