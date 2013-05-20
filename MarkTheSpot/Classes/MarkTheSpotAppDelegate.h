@@ -25,6 +25,7 @@
 	float latitude;
 	float longitude;
 	BOOL useUsUnits;
+	BOOL useGoogleMaps;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -35,6 +36,7 @@
 @property float latitude;
 @property float longitude;
 @property BOOL useUsUnits;
+@property BOOL useGoogleMaps;
 
 - (void)startUpdates;
 - (void)refreshLocation;
@@ -57,6 +59,7 @@
 - (BOOL)hasStoredLocation;
 - (BOOL)hasLocation;
 - (BOOL)showDirectionsWarning;
+- (void)storeConfigurations;
 
 @end
 

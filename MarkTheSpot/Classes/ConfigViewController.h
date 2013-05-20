@@ -12,11 +12,13 @@
 
 @interface ConfigViewController : UIViewController {
 	IBOutlet UISwitch *usSwitch;
+	IBOutlet UISwitch *googleMapsSwitch;
 	IBOutlet UIButton *doneButton;
 	MarkTheSpotAppDelegate *delegate;
 }
 
 @property (nonatomic, retain) UISwitch *usSwitch;
+@property (nonatomic, retain) UISwitch *googleMapsSwitch;
 @property (nonatomic, retain) UIButton *doneButton;
 @property (nonatomic, retain) MarkTheSpotAppDelegate *delegate;
 

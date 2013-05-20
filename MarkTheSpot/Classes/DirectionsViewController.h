@@ -15,6 +15,7 @@
 	IBOutlet UIButton *smallButton;
 	IBOutlet UIButton *configButton;
 	IBOutlet UILabel *distanceToMark;
+	IBOutlet UILabel *accuracy;
 	MarkTheSpotAppDelegate *delegate;
 }
 
@@ -22,6 +23,7 @@
 @property (nonatomic, retain) UIButton *smallButton;
 @property (nonatomic, retain) UIButton *configButton;
 @property (nonatomic, retain) UILabel *distanceToMark;
+@property (nonatomic, retain) UILabel *accuracy;
 @property (nonatomic, retain) MarkTheSpotAppDelegate *delegate;
 
 - (void)viewDidLoad;
@@ -30,5 +32,6 @@
 - (void)configButtonPressed:(id)sender;
 - (void)setDistance:(int)newDistance;
 - (void)setNewMark;
+- (void)setNewAccuracy:(int)newAccuracy;
 
 @end

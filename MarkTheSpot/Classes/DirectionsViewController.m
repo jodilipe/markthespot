@@ -16,6 +16,7 @@
 @synthesize configButton;
 @synthesize delegate;
 @synthesize distanceToMark;
+@synthesize accuracy;
 
 - (void)viewDidLoad {
 //	NSLog(@"DirectionsViewController.viewDidLoad");
@@ -38,6 +39,7 @@
 	[smallImagePressed release];
 	[configImage release];
 	[configImagePressed release];
+    [button setEnabled:NO];
 }
 
 - (void)smallButtonPressed:(id)sender {
@@ -95,7 +97,7 @@
 			}
 		}
 	}	
-	distanceToMark.text = [NSString stringWithFormat:@"Distance: %@", dist];
+	distanceToMark.text = [NSString stringWithFormat:@"Distance to Mark: %@", dist];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -108,12 +110,26 @@
     // Release anything that's not essential, such as cached data
 }
 
+- (void)setNewAccuracy:(int)newAccuracy {
+	if (newAccuracy > 0 && newAccuracy <= 25) {
+		accuracy.text = @"";
+        [button setEnabled:YES];
+	} else if (newAccuracy > 25 && newAccuracy <= 50) {
+		accuracy.text = @"Acceptable accuracy";
+        [button setEnabled:YES];
+	} else {
+		accuracy.text = @"Unacceptable accuracy";
+        [button setEnabled:NO];
+    }
+}
+
 - (void)dealloc {
 	[delegate release];
 	[button release];
 	[smallButton release];
 	[configButton release];
 	[distanceToMark release];
+    [accuracy release];
     [super dealloc];
 }
 

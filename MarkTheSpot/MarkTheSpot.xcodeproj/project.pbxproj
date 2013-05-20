@@ -290,8 +290,8 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = MarkTheSpot;
-				PROVISIONING_PROFILE = "E5AE2A39-74B0-4948-8A2B-BDB2C50BD021";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E5AE2A39-74B0-4948-8A2B-BDB2C50BD021";
+				PROVISIONING_PROFILE = "BA9DE845-7567-429E-B3E0-145B43C4EC9C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BA9DE845-7567-429E-B3E0-145B43C4EC9C";
 			};
 			name = Debug;
 		};
@@ -316,12 +316,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -330,12 +333,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jon Pedersen";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jon Pedersen";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4F0847F0-2F9B-44A9-872A-D6F6918D87AB";
+				PROVISIONING_PROFILE = "7BE1597D-30B3-401D-AC92-1D71C7F5551A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7BE1597D-30B3-401D-AC92-1D71C7F5551A";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -344,12 +349,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jon Pedersen";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jon Pedersen";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AD35EB4D-EB38-4F75-9785-DDFBA3A2363A";
+				PROVISIONING_PROFILE = "7BE1597D-30B3-401D-AC92-1D71C7F5551A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7BE1597D-30B3-401D-AC92-1D71C7F5551A";
 				SDKROOT = iphoneos;
 			};
 			name = Distribution;
