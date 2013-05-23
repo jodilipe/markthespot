@@ -21,10 +21,11 @@
 	[button setImage:imagePressed forState:UIControlStateHighlighted];
 	[image release];
 	[imagePressed release];
+    [button setEnabled:NO];
 }
 
 - (void)buttonPressed:(id)sender {
-	NSLog(@"buttonPressed called");
+//	NSLog(@"buttonPressed called");
 	if (delegate.latitude != 0) {
 		[delegate saveLocation];
 		[delegate setDirectionsViewController];
@@ -43,23 +44,16 @@
 }
 
 - (void)setNewAccuracy:(int)newAccuracy {
-//	NSString *usString = @"0 yd";
-//	NSString *euString = @"0 m";
-//	if (newAccuracy > 0) {
-//		float yards = ((float)newAccuracy * 1.0936133);
-//		usString = [NSString stringWithFormat:@"%i yd", (int)yards];
-//		float meters = (float)newAccuracy;
-//		euString = [NSString stringWithFormat:@"%i m", (int)meters];
-//	}
-//	accuracy.text = [NSString stringWithFormat:@"%@ / %@", euString, usString];
-
 	if (newAccuracy > 0 && newAccuracy <= 40) {
-		accuracy.text = @"Good accuracy";
+		accuracy.text = @"";
+        [button setEnabled:YES];
 	} else if (newAccuracy > 40 && newAccuracy <= 70) {
-		accuracy.text = @"Acceptable accuracy";
+		accuracy.text = NSLocalizedString (@"Acceptable accuracy", nil);
+        [button setEnabled:YES];
 	} else {
-		accuracy.text = @"Bad accuracy";
-	}
+		accuracy.text = NSLocalizedString (@"Unacceptable accuracy", nil);
+        [button setEnabled:NO];
+    }
 }
 
 - (void)dealloc {

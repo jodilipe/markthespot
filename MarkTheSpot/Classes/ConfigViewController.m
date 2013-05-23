@@ -12,29 +12,14 @@
 @implementation ConfigViewController
 
 @synthesize usSwitch;
+@synthesize googleMapsSwitch;
 @synthesize doneButton;
 @synthesize delegate;
-
-/*
-// Override initWithNibName:bundle: to load the view using a nib file then perform additional customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-/*
-// Implement loadView to create a view hierarchy programmatically.
-- (void)loadView {
-}
-*/
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 	usSwitch.on = delegate.useUsUnits;
+	googleMapsSwitch.on = delegate.useGoogleMaps;
 }
 
 - (void)doneButtonPressed:(id)sender {
@@ -43,8 +28,14 @@
 	} else {
 		delegate.useUsUnits = NO;
 	}
+	if (googleMapsSwitch.on) {
+		delegate.useGoogleMaps = YES;
+	} else {
+		delegate.useGoogleMaps = NO;
+	}
 	[delegate setMarkOrDirectionsViewController];
 	[delegate refreshLocation];
+    [delegate storeConfigurations];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

@@ -12,11 +12,9 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2899E5220DE3E06400AC0155 /* MarkTheSpotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* MarkTheSpotViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* MarkTheSpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MarkTheSpotViewController.m */; };
 		FC0612A20EB658FA00158D86 /* DirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0612A10EB658FA00158D86 /* DirectionsViewController.m */; };
-		FC0612A40EB6598600158D86 /* DirectionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0612A30EB6598600158D86 /* DirectionsViewController.xib */; };
 		FC0614760EB7D11900158D86 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0614750EB7D11900158D86 /* CoreLocation.framework */; };
 		FC8986D90EBBDEA400786C11 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8986D40EBBDEA400786C11 /* icon.png */; };
 		FC8986DA0EBBDEA400786C11 /* mark.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8986D50EBBDEA400786C11 /* mark.png */; };
@@ -24,10 +22,22 @@
 		FC8986DC0EBBDEA400786C11 /* directions.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8986D70EBBDEA400786C11 /* directions.png */; };
 		FC8986DD0EBBDEA400786C11 /* directions_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8986D80EBBDEA400786C11 /* directions_pressed.png */; };
 		FC8988B60EBE412D00786C11 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8988B50EBE412D00786C11 /* Default.png */; };
+		FCB0DF7517482C9E0056D0BE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB0DF7417482C9E0056D0BE /* Default-568h@2x.png */; };
+		FCB0DF7D174835AE0056D0BE /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB0DF76174835AC0056D0BE /* Default@2x~iphone.png */; };
+		FCB0DF7E174835AE0056D0BE /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB0DF77174835AD0056D0BE /* Default~iphone.png */; };
+		FCB0DF7F174835AE0056D0BE /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB0DF78174835AD0056D0BE /* Icon-72.png */; };
+		FCB0DF80174835AE0056D0BE /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB0DF79174835AD0056D0BE /* Icon-Small-50.png */; };
+		FCB0DF81174835AE0056D0BE /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB0DF7A174835AD0056D0BE /* Icon-Small.png */; };
+		FCB0DF82174835AE0056D0BE /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB0DF7B174835AE0056D0BE /* Icon-Small@2x.png */; };
+		FCB0DF83174835AE0056D0BE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB0DF7C174835AE0056D0BE /* Icon@2x.png */; };
+		FCC9FF51174A637F00D152BF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCC9FF53174A637F00D152BF /* Localizable.strings */; };
+		FCC9FF55174A6D8600D152BF /* DirectionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCC9FF57174A6D8600D152BF /* DirectionsViewController.xib */; };
+		FCC9FF59174A6DE800D152BF /* MarkTheSpotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCC9FF5B174A6DE800D152BF /* MarkTheSpotViewController.xib */; };
+		FCC9FF5D174A6E2300D152BF /* ConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCC9FF5F174A6E2300D152BF /* ConfigViewController.xib */; };
 		FCD5714112DBD34300FD9236 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD5713F12DBD34300FD9236 /* ConfigViewController.m */; };
-		FCD5715612DBD40900FD9236 /* ConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCD5715312DBD40900FD9236 /* ConfigViewController.xib */; };
 		FCD5715712DBD40900FD9236 /* config.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD5715412DBD40900FD9236 /* config.png */; };
 		FCD5715812DBD40900FD9236 /* config_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD5715512DBD40900FD9236 /* config_pressed.png */; };
+		FCD62AFE174A766A0040A485 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCD62B00174A766A0040A485 /* InfoPlist.strings */; };
 		FCDEDC910EBF978300AE52E0 /* mark_small.png in Resources */ = {isa = PBXBuildFile; fileRef = FCDEDC900EBF978300AE52E0 /* mark_small.png */; };
 		FCDEDC930EBF98DA00AE52E0 /* mark_small_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCDEDC920EBF98DA00AE52E0 /* mark_small_pressed.png */; };
 /* End PBXBuildFile section */
@@ -39,7 +49,6 @@
 		1D6058910D05DD3D006BFB54 /* MarkTheSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkTheSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E5210DE3E06400AC0155 /* MarkTheSpotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkTheSpotViewController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28D7ACF60DDB3853001CB0EB /* MarkTheSpotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkTheSpotViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* MarkTheSpotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkTheSpotViewController.m; sourceTree = "<group>"; };
@@ -48,7 +57,6 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC0612A00EB658FA00158D86 /* DirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionsViewController.h; sourceTree = "<group>"; };
 		FC0612A10EB658FA00158D86 /* DirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionsViewController.m; sourceTree = "<group>"; };
-		FC0612A30EB6598600158D86 /* DirectionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectionsViewController.xib; sourceTree = "<group>"; };
 		FC0614750EB7D11900158D86 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FC8986D40EBBDEA400786C11 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		FC8986D50EBBDEA400786C11 /* mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark.png; sourceTree = "<group>"; };
@@ -56,11 +64,33 @@
 		FC8986D70EBBDEA400786C11 /* directions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directions.png; sourceTree = "<group>"; };
 		FC8986D80EBBDEA400786C11 /* directions_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directions_pressed.png; sourceTree = "<group>"; };
 		FC8988B50EBE412D00786C11 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FCB0DF7417482C9E0056D0BE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FCB0DF76174835AC0056D0BE /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~iphone.png"; sourceTree = "<group>"; };
+		FCB0DF77174835AD0056D0BE /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		FCB0DF78174835AD0056D0BE /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		FCB0DF79174835AD0056D0BE /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		FCB0DF7A174835AD0056D0BE /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		FCB0DF7B174835AE0056D0BE /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		FCB0DF7C174835AE0056D0BE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		FCC9FF52174A637F00D152BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FCC9FF54174A639B00D152BF /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FCC9FF56174A6D8600D152BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DirectionsViewController.xib; sourceTree = "<group>"; };
+		FCC9FF58174A6D8D00D152BF /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = da.lproj/DirectionsViewController.xib; sourceTree = "<group>"; };
+		FCC9FF5A174A6DE800D152BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MarkTheSpotViewController.xib; sourceTree = "<group>"; };
+		FCC9FF5C174A6DEC00D152BF /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = da.lproj/MarkTheSpotViewController.xib; sourceTree = "<group>"; };
+		FCC9FF5E174A6E2300D152BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ConfigViewController.xib; sourceTree = "<group>"; };
+		FCC9FF60174A6E2800D152BF /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = da.lproj/ConfigViewController.xib; sourceTree = "<group>"; };
 		FCD5713F12DBD34300FD9236 /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
 		FCD5714012DBD34300FD9236 /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
-		FCD5715312DBD40900FD9236 /* ConfigViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigViewController.xib; sourceTree = "<group>"; };
 		FCD5715412DBD40900FD9236 /* config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config.png; sourceTree = "<group>"; };
 		FCD5715512DBD40900FD9236 /* config_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config_pressed.png; sourceTree = "<group>"; };
+		FCD62AFF174A766A0040A485 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FCD62B01174A766B0040A485 /* da */ = {isa = PBXFileReference; lastKnownFileType = file; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FCD62B07174A86930040A485 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/ConfigViewController.xib; sourceTree = "<group>"; };
+		FCD62B08174A86930040A485 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MarkTheSpotViewController.xib; sourceTree = "<group>"; };
+		FCD62B09174A86940040A485 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/DirectionsViewController.xib; sourceTree = "<group>"; };
+		FCD62B0A174A86940040A485 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FCD62B0B174A86940040A485 /* de */ = {isa = PBXFileReference; lastKnownFileType = file; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FCDEDC900EBF978300AE52E0 /* mark_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_small.png; sourceTree = "<group>"; };
 		FCDEDC920EBF98DA00AE52E0 /* mark_small_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark_small_pressed.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,7 +157,15 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FCD5715312DBD40900FD9236 /* ConfigViewController.xib */,
+				FCB0DF76174835AC0056D0BE /* Default@2x~iphone.png */,
+				FCB0DF77174835AD0056D0BE /* Default~iphone.png */,
+				FCB0DF78174835AD0056D0BE /* Icon-72.png */,
+				FCB0DF79174835AD0056D0BE /* Icon-Small-50.png */,
+				FCB0DF7A174835AD0056D0BE /* Icon-Small.png */,
+				FCB0DF7B174835AE0056D0BE /* Icon-Small@2x.png */,
+				FCB0DF7C174835AE0056D0BE /* Icon@2x.png */,
+				FCB0DF7417482C9E0056D0BE /* Default-568h@2x.png */,
+				FCC9FF5F174A6E2300D152BF /* ConfigViewController.xib */,
 				FCD5715412DBD40900FD9236 /* config.png */,
 				FCD5715512DBD40900FD9236 /* config_pressed.png */,
 				FCDEDC920EBF98DA00AE52E0 /* mark_small_pressed.png */,
@@ -137,11 +175,13 @@
 				FC8986D60EBBDEA400786C11 /* mark_pressed.png */,
 				FC8986D70EBBDEA400786C11 /* directions.png */,
 				FC8986D80EBBDEA400786C11 /* directions_pressed.png */,
-				2899E5210DE3E06400AC0155 /* MarkTheSpotViewController.xib */,
+				FCC9FF5B174A6DE800D152BF /* MarkTheSpotViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
-				FC0612A30EB6598600158D86 /* DirectionsViewController.xib */,
+				FCC9FF57174A6D8600D152BF /* DirectionsViewController.xib */,
 				FC8988B50EBE412D00786C11 /* Default.png */,
+				FCC9FF53174A637F00D152BF /* Localizable.strings */,
+				FCD62B00174A766A0040A485 /* InfoPlist.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -182,6 +222,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MarkTheSpot" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -191,6 +234,9 @@
 				Japanese,
 				French,
 				German,
+				fr,
+				da,
+				de,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -207,8 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				2899E5220DE3E06400AC0155 /* MarkTheSpotViewController.xib in Resources */,
-				FC0612A40EB6598600158D86 /* DirectionsViewController.xib in Resources */,
+				FCC9FF59174A6DE800D152BF /* MarkTheSpotViewController.xib in Resources */,
+				FCC9FF55174A6D8600D152BF /* DirectionsViewController.xib in Resources */,
 				FC8986D90EBBDEA400786C11 /* icon.png in Resources */,
 				FC8986DA0EBBDEA400786C11 /* mark.png in Resources */,
 				FC8986DB0EBBDEA400786C11 /* mark_pressed.png in Resources */,
@@ -217,9 +263,19 @@
 				FC8988B60EBE412D00786C11 /* Default.png in Resources */,
 				FCDEDC910EBF978300AE52E0 /* mark_small.png in Resources */,
 				FCDEDC930EBF98DA00AE52E0 /* mark_small_pressed.png in Resources */,
-				FCD5715612DBD40900FD9236 /* ConfigViewController.xib in Resources */,
+				FCC9FF5D174A6E2300D152BF /* ConfigViewController.xib in Resources */,
 				FCD5715712DBD40900FD9236 /* config.png in Resources */,
 				FCD5715812DBD40900FD9236 /* config_pressed.png in Resources */,
+				FCB0DF7517482C9E0056D0BE /* Default-568h@2x.png in Resources */,
+				FCB0DF7D174835AE0056D0BE /* Default@2x~iphone.png in Resources */,
+				FCB0DF7E174835AE0056D0BE /* Default~iphone.png in Resources */,
+				FCB0DF7F174835AE0056D0BE /* Icon-72.png in Resources */,
+				FCB0DF80174835AE0056D0BE /* Icon-Small-50.png in Resources */,
+				FCB0DF81174835AE0056D0BE /* Icon-Small.png in Resources */,
+				FCB0DF82174835AE0056D0BE /* Icon-Small@2x.png in Resources */,
+				FCB0DF83174835AE0056D0BE /* Icon@2x.png in Resources */,
+				FCC9FF51174A637F00D152BF /* Localizable.strings in Resources */,
+				FCD62AFE174A766A0040A485 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,18 +296,76 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		FCC9FF53174A637F00D152BF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC9FF52174A637F00D152BF /* en */,
+				FCC9FF54174A639B00D152BF /* da */,
+				FCD62B0A174A86940040A485 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		FCC9FF57174A6D8600D152BF /* DirectionsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC9FF56174A6D8600D152BF /* en */,
+				FCC9FF58174A6D8D00D152BF /* da */,
+				FCD62B09174A86940040A485 /* de */,
+			);
+			name = DirectionsViewController.xib;
+			sourceTree = "<group>";
+		};
+		FCC9FF5B174A6DE800D152BF /* MarkTheSpotViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC9FF5A174A6DE800D152BF /* en */,
+				FCC9FF5C174A6DEC00D152BF /* da */,
+				FCD62B08174A86930040A485 /* de */,
+			);
+			name = MarkTheSpotViewController.xib;
+			sourceTree = "<group>";
+		};
+		FCC9FF5F174A6E2300D152BF /* ConfigViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC9FF5E174A6E2300D152BF /* en */,
+				FCC9FF60174A6E2800D152BF /* da */,
+				FCD62B07174A86930040A485 /* de */,
+			);
+			name = ConfigViewController.xib;
+			sourceTree = "<group>";
+		};
+		FCD62B00174A766A0040A485 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCD62AFF174A766A0040A485 /* en */,
+				FCD62B01174A766B0040A485 /* da */,
+				FCD62B0B174A86940040A485 /* de */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jon Pedersen (VH65MLC3GP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jon Pedersen (VH65MLC3GP)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MarkTheSpot_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = MarkTheSpot;
+				PROVISIONING_PROFILE = "BA9DE845-7567-429E-B3E0-145B43C4EC9C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BA9DE845-7567-429E-B3E0-145B43C4EC9C";
 			};
 			name = Debug;
 		};
@@ -259,11 +373,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jon Pedersen";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jon Pedersen";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MarkTheSpot_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = MarkTheSpot;
+				PROVISIONING_PROFILE = "7BE1597D-30B3-401D-AC92-1D71C7F5551A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7BE1597D-30B3-401D-AC92-1D71C7F5551A";
 			};
 			name = Release;
 		};
@@ -271,12 +390,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -285,12 +407,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jon Pedersen";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jon Pedersen";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4F0847F0-2F9B-44A9-872A-D6F6918D87AB";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "7BE1597D-30B3-401D-AC92-1D71C7F5551A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7BE1597D-30B3-401D-AC92-1D71C7F5551A";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -299,12 +423,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jon Pedersen";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jon Pedersen";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AD35EB4D-EB38-4F75-9785-DDFBA3A2363A";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "7BE1597D-30B3-401D-AC92-1D71C7F5551A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7BE1597D-30B3-401D-AC92-1D71C7F5551A";
 				SDKROOT = iphoneos;
 			};
 			name = Distribution;
@@ -314,11 +440,16 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jon Pedersen";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jon Pedersen";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MarkTheSpot_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = MarkTheSpot;
+				PROVISIONING_PROFILE = "7BE1597D-30B3-401D-AC92-1D71C7F5551A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7BE1597D-30B3-401D-AC92-1D71C7F5551A";
 			};
 			name = Distribution;
 		};

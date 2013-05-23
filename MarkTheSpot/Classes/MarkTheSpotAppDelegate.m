@@ -21,6 +21,7 @@
 @synthesize latitude;
 @synthesize longitude;
 @synthesize useUsUnits;
+@synthesize useGoogleMaps;
 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
@@ -28,6 +29,7 @@
 	NSArray *conf = [NSArray arrayWithContentsOfFile:[self getConfigFilePath]];
 //	NSLog([NSString stringWithFormat:@"stored config %@", [[conf objectAtIndex:0] boolValue]]);
 	useUsUnits = [[conf objectAtIndex:0] boolValue];
+	useGoogleMaps = [[conf objectAtIndex:1] boolValue];
 	[self setMarkOrDirectionsViewController];
 }
 
@@ -55,32 +57,32 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
-	NSLog(@"got new location: latitude: %f longitude: %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
+//	NSLog(@"got new location: latitude: %f longitude: %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
 	self.latitude = newLocation.coordinate.latitude;
 	self.longitude = newLocation.coordinate.longitude;
-	
+    int accuracy = [newLocation horizontalAccuracy];
 	if ([self hasStoredLocation]) {
 		NSArray *storedCoords = [NSArray arrayWithContentsOfFile:[self getLocationFilePath]];
 		CLLocation *storedLocation = [[CLLocation alloc] initWithLatitude:[[storedCoords objectAtIndex:0] floatValue] longitude:[[storedCoords objectAtIndex:1] floatValue]];
 		int distanceInMeters = [newLocation distanceFromLocation:storedLocation];
-		NSLog(@"distance: %i", distanceInMeters);
+//		NSLog(@"distance: %i", distanceInMeters);
 		[directionsViewController setDistance:distanceInMeters];
+		[directionsViewController setNewAccuracy:accuracy];
 	} else {
-		int accuracy = [newLocation horizontalAccuracy];
 //		NSLog([NSString stringWithFormat:@"accuracy %i", accuracy]);
 		[markTheSpotViewController setNewAccuracy:accuracy];
 	}
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error getting location" message:@"Please check location settings"
-												   delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString (@"Error getting location", nil) message:NSLocalizedString (@"Please check location settings", nil)
+												   delegate:self cancelButtonTitle:NSLocalizedString (@"OK", nil) otherButtonTitles: nil];
 	[alert show];
 	[alert release];
 }
 
 - (void)saveLocation {
-	NSLog(@"saveLocation called - latitude: %f longitude: %f", self.latitude, self.longitude);
+//	NSLog(@"saveLocation called - latitude: %f longitude: %f", self.latitude, self.longitude);
 	NSArray *arr = [NSArray arrayWithObjects:[NSNumber numberWithDouble:self.latitude], [NSNumber numberWithDouble:self.longitude], nil];
 	[arr writeToFile:[self getLocationFilePath] atomically:TRUE];
 }
@@ -103,16 +105,20 @@
 }
 		 
 - (void)showDirections {
-	NSLog(@"showDirections called");
+//	NSLog(@"showDirections called");
 	if ([self hasStoredLocation]) {
 		NSArray *storedLocation = [NSArray arrayWithContentsOfFile:[self getLocationFilePath]];
-		NSLog(@"storedLocation: latitude: %f, longitude %f",[[storedLocation objectAtIndex:0] floatValue], [[storedLocation objectAtIndex:1] floatValue]);
-		NSString *spot = [NSString stringWithFormat: @"%+.6f,%+.6f", [[storedLocation objectAtIndex:0] floatValue], [[storedLocation objectAtIndex:1] floatValue]];
-//		self.latitude = 0.0;
-//		self.longitude = 0.0;
-//		[self saveLocation];
-		NSString *url = [NSString stringWithFormat: @"http://maps.google.com/maps?q=%@@%@", spot, spot];
-		NSLog(@"calling maps with url: %@", url);
+//		NSLog(@"storedLocation: latitude: %f, longitude %f",[[storedLocation objectAtIndex:0] floatValue], [[storedLocation objectAtIndex:1] floatValue]);
+		NSString *currentLocation = [NSString stringWithFormat: @"%+.6f,%+.6f", self.latitude, self.longitude];
+		NSString *mark = [NSString stringWithFormat: @"%+.6f,%+.6f", [[storedLocation objectAtIndex:0] floatValue], [[storedLocation objectAtIndex:1] floatValue]];
+
+        NSString *url = @"";
+        if (useGoogleMaps) {
+            url = [NSString stringWithFormat: @"http://maps.google.com/?saddr=%@&daddr=%@", currentLocation, mark];
+        } else {
+            url = [NSString stringWithFormat: @"http://maps.apple.com/?saddr=%@&daddr=%@", currentLocation, mark];
+        }
+//		NSLog(@"calling maps with url: %@", url);
 		[[UIApplication sharedApplication] openURL: [NSURL URLWithString: url]];
 	}
 }
@@ -187,10 +193,14 @@
     [window makeKeyAndVisible];
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-//	NSLog([NSString stringWithFormat:@"storing config %@", (useUsUnits ? @"YES" : @"NO")]);
-	NSArray *arr = [NSArray arrayWithObjects:(useUsUnits ? @"YES" : @"NO"), nil];
+- (void)storeConfigurations {
+//	NSLog(@"storing config feet: %@, google maps: %@", (useUsUnits ? @"YES" : @"NO"), (useGoogleMaps ? @"YES" : @"NO"));
+	NSArray *arr = [NSArray arrayWithObjects:(useUsUnits ? @"YES" : @"NO"), (useGoogleMaps ? @"YES" : @"NO"), nil];
 	[arr writeToFile:[self getConfigFilePath] atomically:TRUE];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [self storeConfigurations];
 }
 
 - (void)dealloc {
