@@ -6,7 +6,7 @@
 
 */
 "Acceptable accuracy" = "Akzeptabler Genauigkeit";
-"Uacceptable accuracy" = "Inakzeptabel Genauigkeit";
+"Unacceptable accuracy" = "Inakzeptabel Genauigkeit";
 "Distance to Mark" = "Abstand zu Mark";
 "Error getting location" = "Fehler beim Abrufen der Lage";
 "Please check location settings" = "Bitte überprüfen Sie Standort-Einstellungen";

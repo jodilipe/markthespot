@@ -6,7 +6,7 @@
 
 */
 "Acceptable accuracy" = "Acceptabel nøjagtighed";
-"Uacceptable accuracy" = "Uacceptabel nøjagtighed";
+"Unacceptable accuracy" = "Uacceptabel nøjagtighed";
 "Distance to Mark" = "Afstand til mærke";
 "Error getting location" = "Fejl ved opdatering af position";
 "Please check location settings" = "Check venligst indstilling for lokalitetstjeneste";
